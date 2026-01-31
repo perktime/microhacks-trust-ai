@@ -28,7 +28,7 @@ jobs:
       AZURE_EMBEDDING_MODEL: ${{ vars.AZURE_EMBEDDING_MODEL }}
 
       # project specific
-      AZURE_CONTAINER_APP_URL: ${{ vars.AZURE_CONTAINER_APP_URL }}
+      #AZURE_CONTAINER_APP_URL: ${{ vars.AZURE_CONTAINER_APP_URL }}
       AZURE_RESOURCE_GROUP: ${{ vars.AZURE_RESOURCE_GROUP }}
 
     steps:
@@ -71,6 +71,15 @@ jobs:
           azd env refresh -e $AZURE_ENV_NAME --no-prompt
         env:
           AZD_INITIAL_ENVIRONMENT_CONFIG: ${{ secrets.AZD_INITIAL_ENVIRONMENT_CONFIG }}
+
+      - name: Export azd env vars to GitHub Actions environment
+        shell: bash
+        run: |
+          set -e
+          ENV_FILE=".azure/${AZURE_ENV_NAME}/.env"
+          echo "Loading $ENV_FILE"
+          test -f "$ENV_FILE"
+          grep -v '^\s*#' "$ENV_FILE" | grep -E '^[A-Za-z_][A-Za-z0-9_]*=' >> "$GITHUB_ENV"
 
       - name: Install evaluation dependencies
         run: |
