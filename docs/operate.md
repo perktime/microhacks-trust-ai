@@ -1,4 +1,4 @@
-#Operate Phase for Generative AI Applications
+# Operate Phase for Generative AI Applications
 
 ## Overview
 Once your generative AI application is deployed, the Operate phase ensures ongoing reliability, safety, and compliance. This phase focuses on observability, alerts, and governance controls so you can detect issues early and maintain Trustworthy AI standards throughout the lifecycle.

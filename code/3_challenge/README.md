@@ -39,7 +39,7 @@ Execute a prebuilt GitHub Actions workflow that automates building and deploying
 #### Assumptions
 
 - You already forked this repo.
-- Make sure, you already logged into AZ, AZD and Github.
+- Make sure, you already logged into AZ, AZD and GitHub.
 - Application should be up and running. The workflow does NOT start your app locally in Github runner env. It calls your already deployed Azure application.
 
 ---
@@ -71,7 +71,7 @@ Follow the questions and choose the right option as per below guideline.
 
 You will see ```.github/workflows``` directory gets created in your branch with default azure-dev.yml file.
 
-Go to Actions, click on ```Github Actions Evaluation Workflow``` and see the initial run.
+Go to Actions, click on ```GitHub Actions Evaluation Workflow``` and see the initial run.
 
 🧩 Step 3 — Capture Service Principal details
 
@@ -89,7 +89,7 @@ Now, GitHub actions evaluation workflow is ready for the trigger.
 
 Do minor change in main branch and push it, it should trigger the workflow pipeline.
 
-Go to GitHub Actions and click ```Github Actions Evaluation Workflow``` to see the workflow status
+Go to GitHub Actions and click ```GitHub Actions Evaluation Workflow``` to see the workflow status
 
 ![CH3-chkevalworkflowrun](../../media/CH3-chkevalworkflowrun.jpg)
 
@@ -240,7 +240,7 @@ With monitoring in place, perform a live test. The Red Team (one or two particip
 
 ## Success Criteria
 
-- Deployment pipeline fail when evalutions don't meet baseline results. (Model Drift)
+- Deployment pipeline fails when evaluations don't meet baseline results. (Model Drift)
 - Production system emits telemetry; metrics, traces and logs
 - Red Team inputs are handled safely
 - Blue Team traces every interaction successfully
@@ -257,7 +257,7 @@ This achieves the **Operate capability of Responsible AI**.
 
 ## Learning Resources
 
-- [Best Pracices](https://azure.microsoft.com/en-us/blogagent-factory-top-5-agent-observability-best-practices-for-reliable-ai/)
+- [Best Practices](https://azure.microsoft.com/en-us/blog/agent-factory-top-5-agent-observability-best-practices-for-reliable-ai/)
 
 - [Live metrics](https://learn.microsoft.com/en-us/azure/azure-monitor/app/live-stream?tabs=otel#get-started)
 

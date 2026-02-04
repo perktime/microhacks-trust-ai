@@ -83,7 +83,7 @@ Business users and developers have been working conceptually on a use case but a
 
     ![Alt text](/media/Ch1_modeldeployment.png "Model Deployment")
 
-1. Define the system message for the Agent in the Instructions section.  A good example is ```You must answer only HR benefits—related questions such as leave policies, PTO, parental leave, insurance, perks, holidays, and HR processes.```
+1. Define the system message for the Agent in the Instructions section.  A good example is ```You must answer only HR benefits-related questions such as leave policies, PTO, parental leave, insurance, perks, holidays, and HR processes.```
 
 1. Setup the knowledge base by clicking the Add button.  You will want to leverage Azure AI Search as the data source.  
 
@@ -123,7 +123,8 @@ Conducting this Responsible AI Impact Assessment not only mitigates risks but al
 
 	Mitigation Strategy
 	* Schedule regular updates of the HR policy index (e.g., after any HR policy change).
-	* Implement a content update checklist with HR team for new/changed policies.– Include policy last-updated timestamps in answers, if feasible, to flag potentially old info.
+	* Implement a content update checklist with HR team for new/changed policies.
+	* Include policy last-updated timestamps in answers, if feasible, to flag potentially old info.
 
 	Owner Accountable
 	* HR Knowledge Manager (ensures documents & index stay current)	
@@ -150,7 +151,7 @@ Conducting this Responsible AI Impact Assessment not only mitigates risks but al
 4. Identified Risk: Misuse or unsafe requests (attempts to get the bot to violate policies or produce harmful content)
 
 	Mitigation Strategy:	
-	* Employ Azure AI Content Safety and Foundry guardrails (already active) ] to block disallowed content.
+	* Employ Azure AI Content Safety and Foundry guardrails (already active) to block disallowed content.
 	* Keep system and safety prompts in place to enforce refusals for out-of-scope questions.
 	* Conduct red-team testing (prompt injections, extreme inputs) and adjust safeguards if any gap is found.– Log and review misuse attempts to continuously improve defenses.
 
@@ -186,7 +187,7 @@ Configure guardrail policies and run automated evaluations in Microsoft Foundry 
 
     ![Alt text](/media/CH1_ContentFilter.png "ContentFilter")
 
-1. Setup the Content filter thru the wizard.  It will ask you for Input filters, output filters and connection.  Here is a review of the setup.
+1. Set up the Content filter through the wizard.  It will ask you for Input filters, output filters and connection.  Here is a review of the setup.
 
     ![Alt text](/media/CH1_Reviews.png "ContentFilterReview")
 

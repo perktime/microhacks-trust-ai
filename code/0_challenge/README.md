@@ -39,7 +39,7 @@ We will set up the initial environment for you to build on top of during your Mi
 * Sweden Central (swedencentral)
 * France Central (francecentral)
 * East US (eastus) (Safety Evaluators not available thru SDK.)
-* West US 3 (westus3) (Safety Evaluators not availble thru SDK.)
+* West US 3 (westus3) (Safety Evaluators not available thru SDK.)
 
 - **Optimal Region** for availability should be Sweden Central (Optimal due to Azure OpenAI availability)
 - **Alternative Region** for availability should be France Central for Azure OpenAI availability.
@@ -72,7 +72,7 @@ We will set up the initial environment for you to build on top of during your Mi
 
     Powershell ```.evalenv\Scripts\Activate.ps1```
 
-1. Install UV to expediate the pip installation
+1. Install UV to expedite the pip installation
 
     ```bash
     pip install uv
@@ -95,9 +95,9 @@ We will set up the initial environment for you to build on top of during your Mi
 
 For Codespaces, go into your web browser and login to github.
 
-1. <u>**Fork**</u> the [Microhack Trustworthy AI](https://github.com/microsoft/microhacks-trust-ai) repo into your Github account. This is requirement to FORK the repo into your account for CH3 due to Github Actions.
+1. <u>**Fork**</u> the [Microhack Trustworthy AI](https://github.com/microsoft/microhacks-trust-ai) repo into your Github account. This is a requirement to FORK the repo into your account for CH3 due to Github Actions.
         
-1.  `Click on Code` (Green) button and click on `+` button (Create a codepspaces on main).  This will take a 10 minutes to provision a Codespaces instance.  For Codpespaces only, it will setup your virtual environment and grant write permissions to necessary files.
+1.  `Click on Code` (Green) button and click on `+` button (Create a codespaces on main).  This will take a 10 minutes to provision a Codespaces instance.  For Codespaces only, it will setup your virtual environment and grant write permissions to necessary files.
 
 1. At the terminal window confirm the home directory ```/microhacks-trust-ai```
 

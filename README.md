@@ -6,7 +6,7 @@ Hands-on Microhack created by Microsoft Office of the CTO Americas, focused on T
 
 ## Presented by Microsoft Americas Office of the CTO
 
-## Microhack Oveview
+## Microhack Overview
 
 The Microhack event is designed to engage technical roles through a condensed, half-day hands-on hack experience. Leveraging the latest Microsoft technologies, this event provides participants with the opportunity to work on real-world problems, collaborate with peers, and explore innovative solutions.
 
@@ -19,7 +19,7 @@ The Microhack event is divided into several key challenges, each carefully craft
 
 ### What you will learn
 
-By the end of this workshop, you will learn to how to accelerate your Generative AI applications to production and ensure they meet Trustworthy AI standards.  We will share these standards at critical milestones in the software development lifecycle and the tools and procedures to validate their compliance.  This Microhack will cover these topics; Responsible AI, Azure AI Landing Zones, model evaluations, red teaming and observability.  
+By the end of this workshop, you will learn how to accelerate your Generative AI applications to production and ensure they meet Trustworthy AI standards.  We will share these standards at critical milestones in the software development lifecycle and the tools and procedures to validate their compliance.  This Microhack will cover these topics; Responsible AI, Azure AI Landing Zones, model evaluations, red teaming and observability.  
 
 ## Setting the Stage
 
@@ -33,7 +33,7 @@ There are four challenges for this workshop.  They are;
 
 * Challenge 0 [Environment Setup](code/0_challenge/README.md)
 * Challenge 1 [Responsible AI - Designing a Reliable & Ethical Application](code/1_challenge/README.md)
-* Challenge 2 [Well-architected & Trusthworthy Foundation](code/2_challenge/README.md)
+* Challenge 2 [Well-architected & Trustworthy Foundation](code/2_challenge/README.md)
 * Challenge 3 [Observability & Operations](code/3_challenge/README.md)
 
 ### Trustworthy AI Overview
@@ -52,7 +52,7 @@ AI unlocks human potential only when built on trust. Trustworthy AI is Microsoft
 
 **Observability** is essential to Trustworthy AI because it provides continuous insight into how AI systems behave in production, allowing engineering teams and governance committees to detect anomalies, track model drift, and ensure outputs remain safe and reliable. With real‑time logs, traces, and performance signals, organizations can quickly identify unexpected behaviors and take appropriate action through structured operational controls that allow systems to be safely paused or adjusted when needed. This level of continuous monitoring ensures AI deployments remain aligned with organizational standards, regulatory expectations, and user trust throughout their lifecycle.
 
-## Software Development Lifcycle
+## Software Development Lifecycle
 
 Generative AI development lifecycle follows a modular approach, consisting of three components, each with a specific function.
 
@@ -68,9 +68,9 @@ A strong governance posture depends on treating AI as a system that must be plan
 
 If you want to learn more about Trustworthy AI, here are further resources.
 
-1. [Microsoft Trustworkthy AI](https://blogs.microsoft.com/blog/2024/09/24/microsoft-trustworthy-ai-unlocking-human-potential-starts-with-trust/)
+1. [Microsoft Trustworthy AI](https://blogs.microsoft.com/blog/2024/09/24/microsoft-trustworthy-ai-unlocking-human-potential-starts-with-trust/)
 
-1. [Secure Future Intitiative](https://go.microsoft.com/fwlink/?linkid=2341428&clcid=0x409&culture=en-us&country=us) 
+1. [Secure Future Initiative](https://go.microsoft.com/fwlink/?linkid=2341428&clcid=0x409&culture=en-us&country=us) 
 
 1. [Model Evaluation](https://www.youtube.com/watch?v=lyCLu53fb3g)
 
