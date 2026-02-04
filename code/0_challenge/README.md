@@ -6,7 +6,7 @@ If you’re running this workshop on your own, you'll need to deploy the worksho
 We will set up the initial environment for you to build on top of during your Microhack. This comprehensive setup includes configuring essential Azure services and ensuring access to all necessary resources. Participants will familiarize themselves with the architecture, gaining insights into how various components interact to create a cohesive solution. With the foundational environment in place, the focus will shift seamlessly to the first Microhack Challenge endeavor.  
 <br>
 <br>
-![Alt text](/media/architecture_ragchat.png "RAGCHAT Architecture")
+![Alt text](../../media/architecture_ragchat.png "RAGCHAT Architecture")
 <br>
 <br>
 
@@ -140,7 +140,7 @@ For Codespaces, go into your web browser and login to github.
 
 1. Open URL for RAGCHAT application printed in the terminal console similar to the below picture. Ask it a few questions to ensure it return results.<br>
 
-![Alt text](/media/ragchatterminal.png "RAGCHAT Terminal")
+![Alt text](../../media/ragchatterminal.png "RAGCHAT Terminal")
 
 <br>
 
@@ -155,7 +155,7 @@ For Codespaces, go into your web browser and login to github.
 
 ## Continue to Challenge 1
 
-After you complete all the success criteria, follow the steps in the [Challenge 1 -- Responsible AI](/code/1_challenge/README.md) to run the workshop. 
+After you complete all the success criteria, follow the steps in the [Challenge 1 -- Responsible AI](../1_challenge/README.md) to run the workshop. 
 <br>
 
 ## Related Azure Technology

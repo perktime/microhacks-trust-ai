@@ -47,23 +47,23 @@ Business users and developers have been working conceptually on a use case but a
 
 1. Go into the Foundry project via the Azure Portal
 
-    ![Alt text](/media/CH1_Foundry.png "Foundry Project")
+    ![Alt text](../../media/CH1_Foundry.png "Foundry Project")
 
 1. Ensure your Foundry portal is in classic mode and you are at the Foundry project interface.  
 
-    ![Alt text](/media/CH1_FoundryClassic.png "Foundry Project Classic")
+    ![Alt text](../../media/CH1_FoundryClassic.png "Foundry Project Classic")
 
 1. Click on Model Catalog to inspect the models available to you.  For this Microhack we are leveraging three models, gpt-4.1-mini, gpt-4o and text-embedding-3-large.  Go into model catalog to review their model cards to understand what use cases they support.  Click on details and go into benchmarks.
 
-    ![Alt text](/media/CH1_MCatalog.png "Foundry Model Catalog")
+    ![Alt text](../../media/CH1_MCatalog.png "Foundry Model Catalog")
 
 1. For benchmarks tab, click on ```Compare with more models``` and remove all models that are not part of this hack and add the extra one that is missing. The benchmark chart should look like this.
 
-    ![Alt text](/media/CH1_Benchmarks.png "Model Benchmarks")
+    ![Alt text](../../media/CH1_Benchmarks.png "Model Benchmarks")
 
 1. Identify which model will be used for model evaluations, chat application and search engine based on the results of this benchmark test and why based on capabilities.
 
-    ![Alt text](/media/CH1_ModelGrid.png "Model Grid")
+    ![Alt text](../../media/CH1_ModelGrid.png "Model Grid")
 
 ---
 
@@ -77,25 +77,25 @@ Business users and developers have been working conceptually on a use case but a
 
 1. Click on Playgrounds and select the Agent playground from the menus
 
-    ![Alt text](/media/CH1_Playground.png "Agent Playground")
+    ![Alt text](../../media/CH1_Playground.png "Agent Playground")
 
 1. A screen will appear called Agent Playground.  Select the gpt-4.1-mini model for your chat application as discussed in model selection.
 
-    ![Alt text](/media/Ch1_modeldeployment.png "Model Deployment")
+    ![Alt text](../../media/Ch1_modeldeployment.png "Model Deployment")
 
 1. Define the system message for the Agent in the Instructions section.  A good example is ```You must answer only HR benefits-related questions such as leave policies, PTO, parental leave, insurance, perks, holidays, and HR processes.```
 
 1. Setup the knowledge base by clicking the Add button.  You will want to leverage Azure AI Search as the data source.  
 
-    ![Alt text](/media/CH1_knowledgebase.png "Azure Search")
+    ![Alt text](../../media/CH1_knowledgebase.png "Azure Search")
 
 1. Lastly, it will ask you to connect to an index already in the project.  There is only one option for Project index and for Search type choose semantic.  The reason for one option is due to the project connections.
 
-    ![Alt text](/media/CH1_IndexSetup.png "IndexSetup")
+    ![Alt text](../../media/CH1_IndexSetup.png "IndexSetup")
 
 1. Test your agent- Ask some sample questions, available here - (https://github.com/Azure-Samples/azure-search-openai-demo/blob/main/evals/ground_truth.jsonl)
 
-    ![Alt text](/media/CH1_Agentchat.png "Agent Chat")
+    ![Alt text](../../media/CH1_Agentchat.png "Agent Chat")
 
 1. Compare the results with your ground truth data to see if agent is able to answer your questions sufficiently.
 
@@ -181,15 +181,15 @@ Configure guardrail policies and run automated evaluations in Microsoft Foundry 
 
 1. Create a guardrail policy- https://learn.microsoft.com/en-us/azure/ai-foundry/control-plane/quickstart-create-guardrail-policy?view=foundry&viewFallbackFrom=foundry-classic
 
-    ![Alt text](/media/CH1_Operate.png "Guardrails")
+    ![Alt text](../../media/CH1_Operate.png "Guardrails")
 
 1. Click on ```Content Filters``` above the Guardrails and controls banner
 
-    ![Alt text](/media/CH1_ContentFilter.png "ContentFilter")
+    ![Alt text](../../media/CH1_ContentFilter.png "ContentFilter")
 
 1. Set up the Content filter through the wizard.  It will ask you for Input filters, output filters and connection.  Here is a review of the setup.
 
-    ![Alt text](/media/CH1_Reviews.png "ContentFilterReview")
+    ![Alt text](../../media/CH1_Reviews.png "ContentFilterReview")
 
 ---
 
@@ -207,7 +207,7 @@ To successfully complete this lab, you must meet all of the following criteria:
 
 ## Continue to Challenge 2
 
-Congratulations for completing Challenge 1 on Responsible AI.  Next challenge is [Challenge 2 (Well-Architected & Trustworthy Foundation)](/code/2_challenge/README.md).
+Congratulations for completing Challenge 1 on Responsible AI.  Next challenge is [Challenge 2 (Well-Architected & Trustworthy Foundation)](../2_challenge/README.md).
 
 ## Best Practices
 

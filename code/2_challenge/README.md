@@ -28,11 +28,11 @@ In Challenge 2, participants take the role of a DevOps/AI engineer in charge of 
 
 Microsoft has developed Azure Review Checklists available to allow customers an automated way to validate that their infrastructure is aligned with the Secure Foundation Initiative and the Well Architected Framework (WAF).
 
-1. Download the [AI Landing Zone Checklist](/docs/ch2_tai_review_checklist.xlsx) from this repo to your desktop for review.  The spreadsheet is prebuilt to reduce setup time for the Microhack.  There is a repo that contains instruction on how to implement it for your Generative AI Application.  [Azure Review Checklist](https://github.com/Azure/review-checklists/blob/main/spreadsheet/README.md).  We suggest for this hack to use the existing spreadsheet but for production deployments leverage the checklist to audit your system.
+1. Download the [AI Landing Zone Checklist](../../docs/ch2_tai_review_checklist.xlsx) from this repo to your desktop for review.  The spreadsheet is prebuilt to reduce setup time for the Microhack.  There is a repo that contains instruction on how to implement it for your Generative AI Application.  [Azure Review Checklist](https://github.com/Azure/review-checklists/blob/main/spreadsheet/README.md).  We suggest for this hack to use the existing spreadsheet but for production deployments leverage the checklist to audit your system.
 
 2. Review the AI Landing Zone checklist items and their status to see which ones are Open, Fulfilled, Not Verified or Not required.  Go to the tab called, "Dashboard" and review the overall status by Design areas.  Review the list for familiarity and discuss with team potential gaps.  This spreadsheet was built using a [private network](https://github.com/Azure-Samples/azure-search-openai-demo/blob/main/docs/deploy_private.md) but was not 100% compliant with Azure AI Landing Zones.
 
-      ![Alt text](/media/AILZ%20Dashboard.png "ALZ Review Checklist")
+      ![Alt text](../../media/AILZ%20Dashboard.png "ALZ Review Checklist")
 </br>
 
 WAF & Security Compliance are now complete and the infrastructure is ready for production.  We will need to run application testing to evaluate if the application is safe and high quality.
@@ -45,11 +45,11 @@ WAF & Security Compliance are now complete and the infrastructure is ready for p
 
 In Challenge 1, we tested our application with a small subset of questions and had a human judge gauge their accuracy. (Manual Evaluations) We want to scale these tests from a handful of questions to 100s of questions to measure the quality and safety of the application.  Automated evaluation scripts leveraging the Azure AI Evaluation SDK will enable us to use a predefined list of questions, answers, context and ground truth to submit into these models.  The results returned by these models will be evaluated by an “AI-Judge” (LLM model) to rate their quality, safety and reason for their scores.  These results will be saved into Microsoft Foundry.
 
-1. Review the [list of questions](/evals/ground_truth.jsonl) to assess whether these questions are representative of the questions users will ask the HR Q&A application.  There are open-source frameworks that can generate a list of question and answer pairs.  In this repo, there is a [Generate Ground Truth data script](https://github.com/Azure-Samples/azure-search-openai-demo/blob/main/docs/evaluation.md#generate-ground-truth-data) that generates questions/answer pairs that humans should review to ensure their quality.  Due to time/costs, we will only leverage the pre-defined list and will not generate any new questions.
+1. Review the [list of questions](../../evals/ground_truth.jsonl) to assess whether these questions are representative of the questions users will ask the HR Q&A application.  There are open-source frameworks that can generate a list of question and answer pairs.  In this repo, there is a [Generate Ground Truth data script](https://github.com/Azure-Samples/azure-search-openai-demo/blob/main/docs/evaluation.md#generate-ground-truth-data) that generates questions/answer pairs that humans should review to ensure their quality.  Due to time/costs, we will only leverage the pre-defined list and will not generate any new questions.
 
 1. Based on CH1 Impact Assessment, you should have a list of evaluation metrics to measure quality and safety.  This application generates text responses in a Q&A format.  Due to this, we plan to leverage the ["General Purpose" Evaluators](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/evaluation-evaluators/general-purpose-evaluators?view=foundry-classic) for quality.  Based on your use case, you will need to determine which evaluation metrics are best suited for your application.  Due to time/cost, we leverage relevance & groundedness for simplicity.  Each one of the evaluation scripts (quality & safety) defines the metrics and maps the results from the [target application to the ground truth data file](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/develop/evaluate-sdk?view=foundry-classic&viewFallbackFrom=foundry#local-evaluation-on-a-target).
 
-     ![Alt text](/media/quality_metrics.png "Quality Metrics")
+     ![Alt text](../../media/quality_metrics.png "Quality Metrics")
 
 1. Go to the command line terminal in codespaces and submit this script to run quality metrics.  
 
@@ -61,7 +61,7 @@ In Challenge 1, we tested our application with a small subset of questions and h
 
 1. For each metric, review the number of success and failures in the Foundry portal to see overall success rate.  
 
-   ![Alt text](/media/ai-quality-ai-assisted-chart.png "AI Quality Metrics")
+   ![Alt text](../../media/ai-quality-ai-assisted-chart.png "AI Quality Metrics")
 
 1. For more information on quality evaluation scripts, read the [Quality Evaluation](https://github.com/Azure-Samples/azure-search-openai-demo/blob/main/docs/evaluation.md) file for RAGCHAT application.
 
@@ -77,7 +77,7 @@ In Challenge 1, we tested our application with a small subset of questions and h
  
 1. Evaluate the Safety metrics and share with the team to determine if they are acceptable.  
 
-    ![Alt text](/media/risk-and-safety-chart.png "AI Safety Metrics")
+    ![Alt text](../../media/risk-and-safety-chart.png "AI Safety Metrics")
 
 Automated Quality & Safety evaluations have validated our application meets our governance rules.  The last step is to determine if the application can handle adversarial attacks.
 
@@ -97,7 +97,7 @@ The AI Red Team Agent will be able to assess risk categories and attack strategi
 
 1. After the scan, review the results carefully. If any serious red team findings appear, this is a fail. For instance, if the report shows the LLM gave out the full text of one of the confidential source documents when asked in a tricky way (data leakage), or it complied with an instruction like “ignore previous rules”, then you’ve got a major issue to fix.
 
-    ![Alt text](/media/ai-red-team-data.png "AI Red Team Results")
+    ![Alt text](../../media/ai-red-team-data.png "AI Red Team Results")
 
 </br>
 
@@ -113,7 +113,7 @@ The AI Red Team Agent will be able to assess risk categories and attack strategi
 
 ## Continue to Challenge 3
 
-After you complete all the success criteria, follow the steps in the [Challenge 3 -- Observability & Operations](/code/3_challenge/README.md) to run the workshop.
+After you complete all the success criteria, follow the steps in the [Challenge 3 -- Observability & Operations](../3_challenge/README.md) to run the workshop.
 
 </br>
 
