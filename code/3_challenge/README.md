@@ -77,7 +77,7 @@ Go to Actions, click on ```Github Actions Evaluation Workflow``` and see the ini
 
 Get the App name from pipeline config output you executed above - it shows something like this “Creating service principal az-dev-XXXXXXXXXXX (30XXXXXXXXXXXXXXXX)”
 
-Go to Microsoft Entra ID —> Enterprise Applications or All Applications —> Search using your app name —> Get the object ID
+Go to Microsoft Entra ID —> Manage -> Enterprise Applications --> Clean all filters and select All Applications —> Search using your app name —> Get the object ID
 
 🧩 Step 4 — Assign Azure permissions
 
