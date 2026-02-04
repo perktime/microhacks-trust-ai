@@ -1,3 +1,6 @@
+[Home](../../README.md) | Challenge 0 | [Challenge 1 >](../1_challenge/README.md)
+
+---
 # Challenge 0: Environment Setup
 
 If you’re running this workshop on your own, you'll need to deploy the workshop resources to your Azure subscription. Follow the instructions to deploy the workshop resources.
