@@ -1,3 +1,7 @@
+[Home](../../README.md) | [< Challenge 2](../2_challenge/README.md) | Challenge 3
+
+---
+
 # Challenge 3: Observability & Operations
 
 ## Overview

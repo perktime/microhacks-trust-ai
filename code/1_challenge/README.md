@@ -1,3 +1,7 @@
+[Home](../../README.md) | [< Challenge 0](../0_challenge/README.md) | Challenge 1 | [Challenge 2 >](../2_challenge/README.md)
+
+---
+
 # Challenge 1: Responsible AI - Designing a Reliable & Ethical Approach
 
 ## Overview

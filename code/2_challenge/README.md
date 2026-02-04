@@ -1,3 +1,7 @@
+[Home](../../README.md) | [< Challenge 1](../1_challenge/README.md) | Challenge 2 | [Challenge 3 >](../3_challenge/README.md)
+
+---
+
 # Challenge 2: Well-Architected & Trustworthy Foundation
 
 ## Overview
