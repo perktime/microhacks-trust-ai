@@ -47,3 +47,7 @@ hooks:
       echo "POST-PROVISION HOOKS COMPLETED"
       echo "Finished at: $(date)"
       echo "=============================================="
+      echo ""
+      APP_URL=$(az containerapp show --name "$AZURE_CONTAINER_APP_NAME" --resource-group "$AZURE_RESOURCE_GROUP" --query "properties.configuration.ingress.fqdn" -o tsv)
+      echo "🚀 Application URL: https://$APP_URL"
+      echo ""
