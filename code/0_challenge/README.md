@@ -11,9 +11,9 @@ We will set up the initial environment for you to build on top of during your Mi
 <br>
 <br>
 
-## Prerequisites for Local Environments (Linux, Windows or MAC)
+## Prerequisites for Local Environments (Linux, Windows or Mac)
 
-1. A computer running Windows 11, macOS, or Linux.  Running on your local PC.
+1. A computer running Windows 11, macOS, or Linux.  
 1. An Azure subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/).
 1. Install the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli).
 1. [Azure Developer CLI (azd)](https://learn.microsoft.com/azure/developer/azure-developer-cli/install-azd)
