@@ -54,15 +54,15 @@ hooks:
       
       Pop-Location
 
-   postup:
-     shell: pwsh
-     interactive: true
-     run: |
+  postup:
+    shell: pwsh
+    interactive: true
+    run: |
        Write-Host "=============================================="
        Write-Host "Deployment Complete"
        Write-Host "Finished at: $(Get-Date)"
        Write-Host "=============================================="
        Write-Host ""
-       $APP_URL = az containerapp show --name "$AZURE_CONTAINER_APP_NAME" --resource-group "$AZURE_RESOURCE_GROUP" --query "properties.configuration.ingress.fqdn" -o tsv
+       $APP_URL = az containerapp show --name "$env:AZURE_CONTAINER_APP_NAME" --resource-group "$env:AZURE_RESOURCE_GROUP" --query "properties.configuration.ingress.fqdn" -o tsv
        Write-Host "🚀 Application URL: https://$APP_URL"
-       Write-Host ""
+       Write-Host ""  
