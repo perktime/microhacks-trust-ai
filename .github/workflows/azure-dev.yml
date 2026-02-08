@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - techconch3
+      - model
 
 permissions:
   id-token: write
@@ -21,10 +21,10 @@ jobs:
       AZURE_LOCATION: ${{ vars.AZURE_LOCATION }}
 
       # Your script uses this as the evaluator deployment name
-      AZURE_CHAT_MODEL: ${{ vars.AZURE_CHAT_MODEL }}
+      AZURE_EVAL_MODEL: ${{ vars.AZURE_EVAL_MODEL }}
 
       # (Optional) keep these if your repo uses them elsewhere
-      AZURE_CHAT_MODEL_VERSION: ${{ vars.AZURE_CHAT_MODEL_VERSION }}
+      AZURE_EVAL_MODEL_VERSION: ${{ vars.AZURE_EVAL_MODEL_VERSION }}
       AZURE_EMBEDDING_MODEL: ${{ vars.AZURE_EMBEDDING_MODEL }}
 
       # project specific
