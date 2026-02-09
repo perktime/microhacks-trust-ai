@@ -58,11 +58,14 @@ You first need to fork this repo into your GitHub account. Use the below button 
 
 [![Fork this repo](https://img.shields.io/badge/Fork%20this%20repo-blue?logo=github)](https://github.com/microsoft/microhacks-trust-ai/fork)
 
-Use the below button to open the Create Codespace page in a new tab. Use the default configuration.
+Create a Codespace from your fork:
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/microsoft/microhacks-trust-ai?quickstart=1)
+- Your fork should have opened automatically after you clicked the above button, but if it didn't, go to your fork (e.g., `https://github.com/<your-username>/microhacks-trust-ai`).
+- Click the green **<> Code** button, then select the **Codespaces** tab.
+- Click **Create codespace on main** (use the default configuration).
 
-- At the terminal window confirm the home directory ```/microhacks-trust-ai```
+
+At the terminal window confirm the home directory ```/microhacks-trust-ai```
 
 - Activate Python Virtual Environment (Linux)
 
